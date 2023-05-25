@@ -3,22 +3,20 @@ import pandas as pd
 import numpy as np
 st.title('Uber pickups in NYC')
 
-DATE_COLUMN = 'date/time'
-DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
-         'streamlit-demo-data/uber-raw-data-sep14.csv.gz')
+import requests
+from bs4 import BeautifulSoup
 
-def load_data(nrows):
-    data = pd.read_csv(DATA_URL, nrows=nrows)
-    lowercase = lambda x: str(x).lower()
-    data.rename(lowercase, axis='columns', inplace=True)
-    data[DATE_COLUMN] = pd.to_datetime(data[DATE_COLUMN])
-    return data
+# Send a GET request to the URL
+url = "https://kafka.pk/collections/all-tapestry"
+response = requests.get(url)
 
+# Parse the HTML content using Beautiful Soup
+soup = BeautifulSoup(response.content, "html.parser")
 
+# Find all the "span" tags with class "title"
+title_spans = soup.find_all("span", class_="title")
 
-    # Create a text element and let the reader know the data is loading.
-data_load_state = st.text('Loading data...')
-# Load 10,000 rows of data into the dataframe.
-data = load_data(10000)
-# Notify the reader that the data was successfully loaded.
-data_load_state.text('Loading data...done!')
+# Extract the text inside each "span" tag
+for span in title_spans:
+    title_text = span.get_text()
+    st.text(title_text)
