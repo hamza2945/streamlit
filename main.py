@@ -15,8 +15,11 @@ soup = BeautifulSoup(response.content, "html.parser")
 
 # Find all the "span" tags with class "title"
 title_spans = soup.find_all("span", class_="title")
+reviews=soup.find_all("span",class_="jdgm-prev-badge__text")
 
 # Extract the text inside each "span" tag
-for span in title_spans:
+for span,review in title_spans,reviews:
     title_text = span.get_text()
+    review=span.get_text()
     st.text(title_text)
+    st.text(review)
