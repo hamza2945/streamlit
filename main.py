@@ -18,8 +18,10 @@ title_spans = soup.find_all("span", class_="title")
 reviews=soup.find_all("span",class_="jdgm-prev-badge__text")
 
 # Extract the text inside each "span" tag
-for span,review in title_spans,reviews:
+for span in title_spans:
     title_text = span.get_text()
-    review=span.get_text()
     st.text(title_text)
-    st.text(review)
+    
+ for review in reviews:
+      review_text=span.get_text()
+      st.text(review_text)
