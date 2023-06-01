@@ -1,10 +1,10 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
-st.title('Uber pickups in NYC')
-
 import requests
 from bs4 import BeautifulSoup
+
+
+st.title('Website Title Scraper')
+
 
 # Send a GET request to the URL
 url = "https://kafka.pk/collections/all-tapestry"
