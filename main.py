@@ -17,7 +17,7 @@ for span in title_spans:
     
     st.text(title_text)
     st.text(reviews[i])
-    i++
+    i=i+1
 for review in reviews:
      review_text=review.get_text()
      st.text(review_text)
