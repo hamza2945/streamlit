@@ -14,6 +14,6 @@ reviews=soup.find_all("span",class_="jdgm-prev-badge__text")
 for span in title_spans:
     title_text = span.get_text()
     st.text(title_text)
- for review in reviews:
-      review_text=span.get_text()
-      st.text(review_text)
+for review in reviews:
+     review_text=span.get_text()
+     st.text(review_text)
