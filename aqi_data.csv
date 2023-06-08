@@ -1,0 +1,80 @@
+City,Year,AQI
+Beijing,2010,86
+Beijing,2011,27
+Beijing,2012,83
+Beijing,2013,91
+Beijing,2014,57
+Beijing,2015,18
+Beijing,2016,93
+Beijing,2017,47
+Beijing,2018,36
+Beijing,2019,21
+Beijing,2020,97
+Beijing,2021,28
+Beijing,2022,16
+Delhi,2010,25
+Delhi,2011,38
+Delhi,2012,50
+Delhi,2013,13
+Delhi,2014,75
+Delhi,2015,58
+Delhi,2016,0
+Delhi,2017,32
+Delhi,2018,84
+Delhi,2019,59
+Delhi,2020,1
+Delhi,2021,41
+Delhi,2022,45
+Lahore,2010,37
+Lahore,2011,2
+Lahore,2012,71
+Lahore,2013,74
+Lahore,2014,1
+Lahore,2015,32
+Lahore,2016,56
+Lahore,2017,71
+Lahore,2018,90   
+Lahore,2019,95   
+Lahore,2020,88   
+Lahore,2021,92   
+Lahore,2022,85
+New York,2010,18
+New York,2011,50
+New York,2012,63
+New York,2013,40
+New York,2014,96
+New York,2015,20
+New York,2016,28
+New York,2017,1
+New York,2018,56
+New York,2019,10
+New York,2020,33
+New York,2021,31
+New York,2022,89
+Mexico City,2010,52   
+Mexico City,2011,67   
+Mexico City,2012,43   
+Mexico City,2013,58   
+Mexico City,2014,76   
+Mexico City,2015,82   
+Mexico City,2016,64   
+Mexico City,2017,70   
+Mexico City,2018,65   
+Mexico City,2019,90   
+Mexico City,2020,82   
+Mexico City,2021,76   
+Mexico City,2022,83   
+Cairo,2010,34   
+Cairo,2011,41   
+Cairo,2012,48  
+Cairo,2013,56  
+Cairo,2014,63  
+Cairo,2015,70  
+Cairo,2016,77  
+Cairo,2017,84  
+Cairo,2018,92  
+Cairo,2019,99  
+Cairo,2020,94  
+Cairo,2021,88   
+Cairo,2022,75   
+
